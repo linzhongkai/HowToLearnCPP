@@ -9,7 +9,7 @@ void selectionSort(double list[], int size){
                 minIndex = j;
             }
         }
-        if(minIndex != i){
+        if(minIndex != i){ //减少不必要的交换
             list[minIndex] = list[i];
             list[i] = minValue;
         }
